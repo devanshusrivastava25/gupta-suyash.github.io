@@ -8,6 +8,8 @@ body {
 }
 
 div#profile-image {
+  height: 200px;
+  width: 50%;
   margin-bottom : 20px;
 }
 
