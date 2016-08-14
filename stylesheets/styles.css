@@ -10,7 +10,6 @@ body {
 div#profile-image {
   height: 180px;
   width: 45%;
-  margin-bottom : 250px;
 }
 
 div.contact {
@@ -46,6 +45,10 @@ h1, h2, h3 {
 h4, h5, h6 {
   color:#8f2400;
   margin:0 0 5px;
+}
+
+intro {
+ margin: auto;
 }
 
 p, ul, ol, table, pre, dl {
