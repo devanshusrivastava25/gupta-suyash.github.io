@@ -10,6 +10,7 @@ body {
 div#profile-image {
   height: 180px;
   width: 45%;
+  margin-bottom : 300px;
 }
 
 div.contact {
