@@ -48,24 +48,29 @@
 </nav>
  
  <div class="row">
-     <div class="col-xs-4" style="padding-left: 5vmin;">
-         <div class="row">
-         <p style="font-size: 5vmin;"><b>SUYASH GUPTA</b></p>
-         </div>
-             
-     </div>
-     <div class="col-xs-4" style="padding-top: 10vmin;">
-         <p style="font-size: 2.2vmin;"> I am a Doctoral Scholar and Research Assistant at <a href="http://cs.purdue.edu/">Department of Computer Science</a>, 
-             <a href="https://www.purdue.edu/">Purdue University</a>. I work under the guidance of <a href="https://www.cs.purdue.edu/homes/suresh/">Prof. 
-             Suresh Jagannathan</a>. My current research interests are at the intersection of Distributed Systems and Programming Languages. I am also 
-             associated with the <a href="http://purduepl.github.io/">PurPL</a> and <a href="https://www.siam.org/students/chapters/current/purdue.php">SIAM</a> 
-             at Purdue.
-         </p>
-         <p> I received my Master of Science degree from <a href="http://www.cse.iitm.ac.in/"> Department of CSE</a>, 
-             <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a>. I was advised by <a href="http://www.cse.iitm.ac.in/~krishna/">Dr. V. Krishna Nandivada</a>.
-             My thesis was titled as Analyzing Recursive Task Parallel Programs.
-             </p>
-     </div>
+     <p style="font-size: 4vmin;"><b>Testing Weakly Consistent Distributed System</b></p>
+ </div>
+
+ <div class="row">
+     <p style="font-size: 2.2vmin;">
+         DistCheck applies the notion of <b>Litmus testing</b> to the distributed system. 
+         Litmus testing is a principled technique used for validation of memory models. 
+         Herd7 is an exemplary tool that supports the same. 
+         The principles of Litmus testing can be applied to distributed systems to study the behavior of distributed systems 
+         on different consistency models. 
+         Such a testing can also reveal bugs and the developer false understanding of the underlying store semantics. 
+         However, there aren’t works that allow developers to express their desired consistency model and test their impact on their application.
+     </p>
+     
+     <p style="font-size: 2.2vmin;">
+        DistCheck fills in this gap by allowing programmers to specify a Litmus testcase that consists of – 
+         (a) a set of sessions, (b) an initial state of the program variables, and (c) the condition to be validated. 
+         It also allows developer to specify the semantics of the underlying store using relations such as 
+         session order (so), same object (same) and visibility (vis). 
+         The system performs a simple symbolic execution and uses a SMT solver to check the validity of the condition. 
+         In the most simplest form, each session is just a set of read and write operations.
+     </p>
+ </div>     
      
  </div>
  </body>
