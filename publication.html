@@ -48,28 +48,17 @@
 </nav>
  
  <div class="row" style="padding-left: 5vmin;">
-     <p style="font-size: 4vmin;"><b>Testing Weakly Consistent Distributed System</b></p>
+     <p style="font-size: 4vmin;"><b>Publications</b></p>
  </div>
 
  <div class="row" style="padding-left: 5vmin;">
-     <p style="font-size: 2.2vmin; padding-right: 20vmin;">
-         <b>DistCheck</b> applies the notion of <b>Litmus testing</b> to the distributed system. 
-         Litmus testing is a principled technique used for validation of memory models. 
-         Herd7 is an exemplary tool that supports the same. 
-         The principles of Litmus testing can be applied to distributed systems to study the behavior of distributed systems 
-         on different consistency models. 
-         Such a testing can also reveal bugs and the developer false understanding of the underlying store semantics. 
-         However, there aren’t works that allow developers to express their desired consistency model and test their impact on their application.
-     </p>
+     <ul style="font-size: 2.2vmin; padding-right: 20vmin;">
+	<li> Optimizing Recursive Task Parallel Programs. S Gupta, R Shrivastava, and V K Nandivada, 
+		(to appear) in the Proceedings of the Intenational Conference on Supercomputing 2017. </li>
+	<li> IMSuite: A Benchmark Suite for Simulating Distributed Algorithms. S Gupta and V K Nandivada, 
+		Journal of Parallel and Distributed Computing (JPDC), Elsevier, 2015. </li>
+     </ul>
      
-     <p style="font-size: 2.2vmin; padding-right: 20vmin; align=justify">
-        DistCheck fills in this gap by allowing programmers to specify a Litmus testcase that consists of – 
-         (a) a set of sessions, (b) an initial state of the program variables, and (c) the condition to be validated. 
-         It also allows developer to specify the semantics of the underlying store using relations such as 
-         session order (so), same object (same) and visibility (vis). 
-         The system performs a simple symbolic execution and uses a SMT solver to check the validity of the condition. 
-         In the most simplest form, each session is just a set of read and write operations.
-     </p>
  </div>     
      
  </div>
